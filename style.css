@@ -1,0 +1,137 @@
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cartoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    width: 200px;
+    padding-right: 40px;
+    color: hsl(0, 0%, 100%);
+}
+
+#sedas {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+#luxo{
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.iconesDeCarros {
+    width: 64px;
+    padding-bottom: 30px;
+}
+
+.tituloDosCartoes {
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 600;
+    font-size: 200%;
+    padding-bottom: 30px;
+}
+
+.textoDosCartoes {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+    padding-bottom: 100px;
+    height: 10px;
+    line-height: 22px;
+    font-size: 13px;
+}
+
+.botoesDosCartoes {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 14px;
+    background-color:hsl(0, 0%, 100%);
+    margin-top: 80px;
+    margin-right: 70px;
+    margin-bottom: 20px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 30px;
+    border-color: hsl(0, 0%, 100%);
+    border: 2px solid;
+    cursor: pointer;
+}
+
+.botaoDoCartaoSedas {
+    color: hsl(31, 77%, 52%);
+    border-color: hsl(31, 77%, 52%);
+}
+
+.botaoDoCartaoSedas:hover {
+    background-color: hsl(31, 77%, 52%);
+    border-color: hsl(0, 0%, 100%);
+    border: 2px solid;
+    color: hsl(0, 0%, 100%);
+}
+
+.botaoDoCartaoSuvs {
+    color: hsl(184, 100%, 22%);
+}
+
+.botaoDoCartaoSuvs:hover {
+    background-color: hsl(184, 100%, 22%);
+    border-color: hsl(0, 0%, 100%);
+    border: 2px solid;
+    color: hsl(0, 0%, 100%);
+}
+
+.botaoDoCartaoLuxo {
+    color: hsl(179, 100%, 13%);
+}
+
+.botaoDoCartaoLuxo:hover {
+    background-color: hsl(179, 100%, 13%);
+    border-color: hsl(0, 0%, 100%);
+    border: 2px solid;
+    color: hsl(0, 0%, 100%);
+}
+
+
+@media screen and (max-width: 850px) {
+    #container {
+        flex-direction: column;
+        margin: auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    #sedas {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+
+    #luxo {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+}
